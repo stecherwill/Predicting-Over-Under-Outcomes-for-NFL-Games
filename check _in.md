@@ -14,7 +14,7 @@
 ### Exec Sum (need to add more)
 Building a sports gambling model.
 
-The betting model I have developed is going to attempt to assess the current potential of a team, which is then compared to its opposition in an attempt to gauge the likely outcome of the contest. This will be accomplished by building a model with all the NFL teams, odds, spreads, and outcomes since the 2006 to the 2018 season. This model will then help provide insights to sports bettors on whether teams are more likely to go over or under the set betting lines. In order to make this model I will creatively handle missing data and null values.  
+The betting model I have developed is going to attempt to assess the current potential of a team, which is then compared to its opposition in an attempt to gauge the likely outcome of the contest. This will be accomplished by building a classification model with all the NFL teams, odds, spreads, and outcomes since the 2014 to the 2018 season. This model will then help provide insights to sports bettors on whether teams are more likely to go over or under the set betting line. In order to make this classification model I will creatively handle missing data and null values.
 
 ###  Problem Statement
 Is it possible to find value in the NFL betting markets and provide insights to bettors to beat the sports handicappers? 
@@ -25,7 +25,7 @@ Yes, I do have all my data in hand however I am looking at attaining more data r
 ### 2
 Yes, I have done a majority of my eda however I am looking into creating some additional columns based of the data and dummy variables as well. I also need to look into more visualizations but have been really focused on how the best way to handle null values.
 ### 3
-I have not begun the modeling process yet.
+I have not begun the modeling process yet. Need to work on feature engineering and preparing my features for modeling.
 ### 4
 My biggest blockers are figuring out how to handle some of the missing data. I have been looking into matt brems lecture on missing data and seeing about finding a different solution then I have right now. Which is taking the median or mode depending on which I think will work best. However, I think there could be a better solution.
 
@@ -43,3 +43,4 @@ Data source:
 http://www.aussportsbetting.com/data/historical-nfl-results-and-odds-data/
 http://www.nflsavant.com/about.php
 https://www.bettingexpert.com/academy/advanced-betting-theory/developing-a-predictive-betting-model
+https://www.sportsbusinessdaily.com/Journal/Issues/2018/04/16/World-Congress-of-Sports/Research.aspx
