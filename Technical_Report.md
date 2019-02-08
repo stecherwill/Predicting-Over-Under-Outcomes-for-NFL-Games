@@ -24,16 +24,16 @@ First creating a new over/under result column for each game is essential to help
 Before going into EDA I had some intuition that weather is going to be a factor when it comes to predicting if a certain game is going to go over/under the set lines. When it comes to points scored one can infer that what type of weather is occurring during the time of the game can have an impact on the score. When a game is played in a dome an not an outdoor stadium, it eliminates all the effects of weather, ie more points are scored in a dome. No wind, rain, snow, or extreme temperatures which can affect player performance, which in turn can decrease total points. To account for this created a dummy variable column for all stadium types and weather, dome, non-dome, rain, snow, fog and combinations of those if present.
 I made a average win rate column this will be used to determine who has the better record in each matchup and can be used to determine how many points will be scored.  Also made a cumulative average total points column. The histogram below shows the most frequent total points for each game, the average being around 45 total points per game. This follows a pretty normal distribution. This a good depiction of having enough sufficient data as the NFL game average is actually 43 total points.
 
-![1](images/Screen Shot 2019-02-08 at 3.11.16 PM.png)
+![1](Images/Screen Shot 2019-02-08 at 3.11.16 PM.png)
 
 The creation of the cumulative avg points column will be a key predictor in predicting the over/under as most NFL games do a follow a scoring pattern.
 Next examined how closely vegas set over/under is to the actual total points. The visual below shows a very saturated point of interest on 45 points. This conveys how accurate the set over/under is for each game versus total points scored, which shows the difficulty behind predicting if the total points will be over/under. 
 
-![1](images/Screen Shot 2019-02-08 at 3.22.30 PM.png)
+![1](Images/Screen Shot 2019-02-08 at 3.22.30 PM.png)
 
 Lastly, analyzed the effect of high winds on points scored. When there is high wind in an NFL game it makes it harder to make accurate passes. On the graph below there is a slight downward trend when there is high wind, however there are not as many high wind games within the data to portray a conclusive accurate depiction.
 
-![1](images/Screen Shot 2019-02-08 at 3.40.22 PM.png)
+![1](Images/Screen Shot 2019-02-08 at 3.40.22 PM.png)
 
 
 ### MODELING
