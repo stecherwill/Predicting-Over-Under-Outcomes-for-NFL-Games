@@ -31,15 +31,20 @@ Next examined how closely vegas set over/under is to the actual total points. Th
 
 ![photo](Images/over_under_total_points.png)
 
-Lastly, analyzed the effect of high winds on points scored. When there is high wind in an NFL game it makes it harder to make accurate passes. On the graph below there is a slight downward trend when there is high wind, however there are not as many high wind games within the data to portray a conclusive accurate depiction.
+Lastly, analyzed the effect of high winds on points scored. When there is high wind in an NFL game it makes it harder to make accurate passes, which leads to fewer points scored. On the graph below there is a slight downward trend when there is high wind, however there are not as many high wind games within the data to portray an accurate depiction.
 
 ![photo](Images/wind.png)
 
 
 ### MODELING
+After preprocessing and EDA there are 13 distinguishing features for predicting over/under. A few of the strongest predictors are, cumulative average points scored per game, temperature, and wind. All of these are then transformed using polynomial features to create unique feature interactions. These features will then be used in a classification model. Used grid search to tune my model and optimize the hyper parameters before using an xgboost model, which returns a probability used for classification: identifying whether a specific game will go over or not over the specified over/under line. I evaluate my trained model by its 57% mean  cross value score on unseen data, compared to a baseline prediction of 48%. 
+
 
 ### CONCLUSION
+After running my trained xgboost classification model to classify each NFL game I saw an increase of around 9% from the baseline prediction. Not predicting at as high of a rate as was expected, however predicting at a rate of 57% is still pretty optimal in the world of gambling. Most professional sports bettors at max sustain a winning percentage of 53% and that is not long term. Through these findings the biggest takeaway is that finding trends and features that will help predict outcomes is not obvious. I need to think more outside of the box to get creative with what types of data could be used in the model and come up with different variables that haven’t been used in the past to take this to the next level.
 
 ### NEXT STEPS
+More data and different types of data are needed to have this model predicting at a more efficient rate. This model and data is a good baseline to build off of and implement even more feature engineering to create better results. I could extract player data for each NFL team, this information will be used to help gain a better understanding of a team’s performance week to week. I can then use this to create a weekly power ranking of each NFL team based off its performance. With this information I can further improve the functionality and potentially estimate what each team will score based of the matchup before the game occurs.
+
 
 
